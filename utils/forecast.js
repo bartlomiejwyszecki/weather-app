@@ -3,13 +3,13 @@ const request = require('postman-request')
 const forecast = (latitude, longitude, callback) => {
     const url = 'http://api.weatherstack.com/current?access_key=8521046f3448d426d69e3df41a1695e2&query=' + latitude + ',' + longitude
 
-    request({ url: url, json: true }, (error, response) => {
+    request({ url, json: true }, (error, { body }) => {
         if (error) {
             callback('You have no connection with network', undefined)
-        } else if (response.body.error) {
+        } else if (body.error) {
             callback('There is no place like ' + latitude + ', ' + longitude, undefined)
         } else {
-            callback(undefined, response.body.current)
+            callback(undefined, `It is actually ${body.current.temperature} degrees, but it feels like ${body.current.feelslike} degrees.`)
         }
     })
 }
