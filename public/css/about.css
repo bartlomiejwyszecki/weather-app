@@ -1,0 +1,8 @@
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('./../assets/img/Profilowe.png');
+    background-size: cover;
+    box-shadow: 2px 2px 5px #757575;
+}
