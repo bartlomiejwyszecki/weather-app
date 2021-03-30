@@ -46,6 +46,29 @@ app.get('/weather', (req, res) => {
     }])
 })
 
+app.get('/products', (req, res) => {
+    console.log(req.query)
+    res.send({
+        products: []
+    })
+})
+
+app.get('/help/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Bartłomiej Wyszecki',
+        errorMessage: 'Help article not found'
+    })
+})
+
+app.get('*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Barłomiej Wyszecki',
+        errorMessage: 'Page not found.'
+    })
+})
+
 app.listen(3000, () => {
     console.log('Server is up on port 3000.')
 })
