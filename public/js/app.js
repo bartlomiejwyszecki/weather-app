@@ -1,19 +1,23 @@
 console.log('Js folder working')
 
-let city = ''
+const weatherForm = document.querySelector('form')
+const search = document.querySelector('input')
 
-fetch('http://localhost:3000/weather?address=' + city).then((response) => {
-    response.json().then((data) => {
-        if (data.error) {
-            return console.log(data.error)
-        }
-        console.log(`Location: ` + data.location)
-        console.log(`Forecast: ` + data.forecast)
+weatherForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    const location = search.value
+
+    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+        response.json().then((data) => {
+            if (data.error) {
+                return console.log(data.error)
+            }
+            requestedLocation.innerHTML = data.location
+            requestedForecast.innerHTML = data.forecast
+        })
     })
 })
 
-const weatherForm = document.querySelector('form')
-
-weatherForm.addEventListener('submit', () => {
-    console.log('testing!')
-})
+let requestedLocation = document.querySelector('.location')
+let requestedForecast = document.querySelector('.forecast')
