@@ -11,3 +11,9 @@ fetch('http://localhost:3000/weather?address=' + city).then((response) => {
         console.log(`Forecast: ` + data.forecast)
     })
 })
+
+const weatherForm = document.querySelector('form')
+
+weatherForm.addEventListener('submit', () => {
+    console.log('testing!')
+})

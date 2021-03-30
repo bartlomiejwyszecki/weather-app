@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form button {
+    width: 75px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+form .mb-3 {
+    width: calc(100% - 100px);
+}
