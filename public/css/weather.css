@@ -32,7 +32,7 @@ form .mb-3 input::placeholder {
     opacity: 0.5;
 }
 
-.mb-3 input, .mb-3 input:focus, .mb-3 input:active {
+.mb-3 input, .mb-3 input:focus, .mb-3 input:active, .mb-3 input:checked {
     color: #fafafa;
 }
 
