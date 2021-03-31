@@ -26,6 +26,7 @@ weatherForm.addEventListener('submit', (e) => {
                 cloudCover.textContent = data.forecast.current.cloudcover + '%'
                 windSpeed.textContent = data.forecast.current.wind_speed + ' km/h'
                 humidity.textContent = data.forecast.current.humidity + '%'
+                caption.textContent = data.forecast.current.weather_descriptions[0]
                 $(".block").css("display", "flex")
             }
         })
@@ -40,3 +41,4 @@ let feelsLike = document.querySelector('#feelslike')
 let cloudCover = document.querySelector('#cloudcover')
 let windSpeed = document.querySelector('#wind_speed')
 let humidity = document.querySelector('#humidity')
+let caption = document.querySelector('#caption')
