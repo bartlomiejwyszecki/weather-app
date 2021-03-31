@@ -11,14 +11,20 @@
     </head>
     <body>
         {{>header}}
-
         <div class="container">
-            <div class="img"></div>
-            <div class="description">
-            <p>{{ name }}</p>
+            <div class="row">
+                <div class="photo col-12 col-md-6">
+                <img src="/assets/img/mobile.png" style="max-width: 100%; max-height: 80vh;">
+                </div>
+                <div class="description col-12 col-md-5">
+                    <h1>Weather application</h1>
+                    <h4>Welcome to my weather application</h4>
+                    <p>This application is made in node.js, and is based on api weatherstack. To run the server I used expressjs. 
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis commodo ultricies. Aenean sed nunc fermentum, gravida est et, luctus nulla. Cras aliquam lacus ac faucibus lobortis. Nam sem nunc, ultrices a diam eu, auctor pulvinar lacus. Donec in diam eleifend, semper leo nec, varius orci. Morbi erat lorem, consequat sed dictum sit amet, ultricies vel dolor. Vestibulum eget ex quis magna ultrices hendrerit id eget ex.</p>
+                </div>
             </div>
         </div>
-
         {{>footer}}
     </body>
 </html>

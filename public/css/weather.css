@@ -22,7 +22,7 @@ form .mb-3 {
     width: calc(100% - 100px);
 }
 
-form .mb-3 input {
+form .mb-3 input, form .mb-3 input:checked, form .mb-3 input:focus {
     background: rgba(255, 255, 255, .1);
     border: none;
 }
@@ -30,6 +30,10 @@ form .mb-3 input {
 form .mb-3 input::placeholder {
     color: #fafafa;
     opacity: 0.5;
+}
+
+.mb-3 input, .mb-3 input:focus, .mb-3 input:active {
+    color: #fafafa;
 }
 
 #message {
@@ -46,8 +50,6 @@ form .mb-3 input::placeholder {
 }
 
 .bg svg {
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
@@ -59,29 +61,29 @@ form .mb-3 input::placeholder {
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
     .bg svg {
-        width: 120%;
-        right: 10%;
+        width: 140%;
+        right: 20%;
         height: auto;
     }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .bg svg {
-        width: 120%;
-        right: 10%;
+        width: 160%;
+        right: 30%;
         height: auto;
     }
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
     .bg svg {
-        width: 220%;
-        right: 60%;
+        width: 250%;
+        right: 75%;
         height: auto;
     }
 }
 @media only screen and (max-width: 479px) {
     .bg svg {
-        width: 280%;
-        right: 90%;
+        width: 300%;
+        right: 100%;
         height: auto;
     }
 }

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     color: #fafafa;
 }
@@ -29,15 +30,19 @@ nav {
 a {
     text-decoration: none;
     color: #fafafa;
-    text-shadow: 0px 0px 2px #696969;
+}
+a:hover {
+    color: #0275d8;
 }
 
 footer {
-    color: #757575;
-    text-align: center;
     position: fixed;
+    color: #fafafa;
+    text-align: center;
     bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .05);
+    z-index: 10;
     width: 100%;
     padding: 15px 0 10px 0;
-    box-shadow: 0px 0px 10px -5px #757575;
 }
