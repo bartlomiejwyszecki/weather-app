@@ -75,15 +75,15 @@ form .mb-3 input::placeholder {
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
     .bg svg {
-        width: 250%;
-        right: 75%;
+        width: 280%;
+        right: 90%;
         height: auto;
     }
 }
 @media only screen and (max-width: 479px) {
     .bg svg {
-        width: 300%;
-        right: 100%;
+        width: 320%;
+        right: 110%;
         height: auto;
     }
 }
