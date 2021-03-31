@@ -23,6 +23,11 @@ nav {
     font-size: 0.9em;
 }
 
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    border: none;
+}
+
 .navbar-brand {
     margin-left: 25px;
 }
@@ -45,4 +50,14 @@ footer {
     z-index: 10;
     width: 100%;
     padding: 15px 0 10px 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav a {
+        padding: 15px 0 15px 50px;
+        margin-left: 30px;
+    }
+    .navbar {
+        background: rgba(255, 255, 255, .2);
+    }
 }
