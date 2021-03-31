@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('There is no place like ' + latitude + ', ' + longitude, undefined)
         } else {
-            callback(undefined, body.current)
+            callback(undefined, body)
         }
     })
 }

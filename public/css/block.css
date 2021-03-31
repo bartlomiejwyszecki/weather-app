@@ -1,0 +1,43 @@
+.block {
+    flex-direction: column;
+    text-align: center;
+    color: #fafafa;
+    margin-top: 75px;
+    display: none;
+    animation: mymove 1s;
+}
+
+.temperature {
+    font-size: 70px;
+}
+.caption {
+    margin-top: -25px;
+    font-size: 21px;
+}
+
+table {
+    margin-top: 100px;
+    width: 100%;
+    text-align: left;
+}
+
+table thead {
+    border-bottom: 1px solid white;
+}
+
+tbody {
+    font-weight: 300;
+}
+
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+th, td {
+    padding: 10px;
+}
+
+@keyframes mymove {
+    0%   {transform: translateX(-100vw)}
+    100% {transform: translateX(0)}
+  }
