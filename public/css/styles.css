@@ -2,9 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #fafafa;
     margin: 0;
-    color: #212121;
 }
 
 h1 {
@@ -18,39 +16,19 @@ h5 {
     font-weight: 300;
 }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    box-shadow: 2px 0px 5px #757575;
-    margin-bottom: 25px;
+nav {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    font-size: 0.9em;
 }
 
-header h1 {
-    line-height: 50px;
-    padding-left: 20px;
-}
-
-header ul {
-    list-style: none;
-    line-height: 50px;
-    right: 0;
-}
-
-header ul li {
-    display: inline;
-    font-size: 1em;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 0 20px 0 50px;
+.navbar-brand {
+    margin-left: 25px;
 }
 
 a {
     text-decoration: none;
-    color: #212121;
+    color: #fafafa;
+    text-shadow: 1px 1px 2px #757575;
 }
 
 footer {

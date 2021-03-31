@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('There is no place like ' + latitude + ', ' + longitude, undefined)
         } else {
-            callback(undefined, `It is actually ${body.current.temperature} degrees, but it feels like ${body.current.feelslike} degrees.`)
+            callback(undefined, body.current)
         }
     })
 }
