@@ -68,22 +68,22 @@ form .mb-3 input::placeholder {
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .bg svg {
-        width: 160%;
-        right: 30%;
+        width: 200%;
+        right: 50%;
         height: auto;
     }
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
     .bg svg {
-        width: 280%;
-        right: 90%;
+        width: 380%;
+        right: 140%;
         height: auto;
     }
 }
 @media only screen and (max-width: 479px) {
     .bg svg {
-        width: 320%;
-        right: 110%;
+        width: 440%;
+        right: 170%;
         height: auto;
     }
 }
